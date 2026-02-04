@@ -1,0 +1,4 @@
+# Optional: HTTP Basic Auth via Netlify custom headers.
+# Uncomment and set credentials if you upgrade plan and want browser-native auth for /members/*
+#/members/*
+#  Basic-Auth: IRIM:changeme AnotherUser:anotherpass
