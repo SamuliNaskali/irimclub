@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Members — IRIM Club</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <main class="section">
+    <div class="container">
+      <div class="members-card" style="max-width:520px;margin:40px auto;padding:20px;border:1px solid #c8a75a;border-radius:16px;background:rgba(0,0,0,.12)">
+        <h1>Members</h1>
+        <p class="muted">Enter the passphrase to continue.</p>
+        <form id="gate">
+          <div class="form-row" style="display:grid;gap:6px;margin-bottom:10px">
+            <label for="pw">Passphrase</label>
+            <input id="pw" name="pw" type="password" autocomplete="current-password" required />
+          </div>
+          <button class="btn primary" type="submit" style="background:#c8a75a;color:#162012;font-weight:700;border-radius:12px;padding:10px 16px;border:0">Unlock</button>
+          <p class="password-hint muted" style="margin-top:8px">(Change the passphrase hash in <code>members/members.js</code>.)</p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="members.js"></script>
+</body>
+</html>
